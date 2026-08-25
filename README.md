@@ -8,16 +8,11 @@ This SPFx extension was built to embed Microsoft Teams chats within SharePoint p
 
 ## Used SharePoint Framework Version
 
-<<<<<<< HEAD
 ![version](https://img.shields.io/badge/version-1.23.2-green.svg)
-=======
-![version](https://img.shields.io/badge/version-1.16-green.svg)
->>>>>>> upstream/main
 
 ## Applies to
 
 - [SharePoint Framework](https://aka.ms/spfx)
-<<<<<<< HEAD
 
 ## Version history
 
@@ -26,19 +21,6 @@ This SPFx extension was built to embed Microsoft Teams chats within SharePoint p
 | 1.0     | November 19, 2023| Initial release                                                          |
 | 1.1     | May 10, 2024     | Added support to render without granting Microsoft Graph permissions     |
 | 2.0.    | August 25, 2026  | Architectural modernization: heft, spfx 1.23.2, node 24.19, npm v 12.0.2 |
-=======
-- [Microsoft 365 tenant](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-
-> Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
-
-
-## Version history
-
-| Version | Date             | Comments        |
-| ------- | ---------------- | --------------- |
-| 1.0     | November 19, 2023 | Initial release |
-| 1.1     | May 10, 2024 | Added support to render without granting Microsoft Graph permissions |
->>>>>>> upstream/main
 
 ## Disclaimer
 
@@ -52,7 +34,6 @@ This SPFx extension was built to embed Microsoft Teams chats within SharePoint p
 - Ensure that you are at the solution folder
 - in the command-line run:
   - **npm install**
-<<<<<<< HEAD
   - **heft run**
 
 ## Forking This Solution
@@ -74,14 +55,6 @@ node -e "console.log(require('crypto').randomUUID())"
 
 ## References
 
-=======
-  - **gulp serve**
-
-
-## References
-
-- [Getting started with SharePoint Framework](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
->>>>>>> upstream/main
 - [Building for Microsoft teams](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/build-for-teams-overview)
 - [Use Microsoft Graph in your solution](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
 - [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)

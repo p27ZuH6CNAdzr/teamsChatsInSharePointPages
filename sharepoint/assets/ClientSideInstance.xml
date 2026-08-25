@@ -3,11 +3,7 @@
     <ClientSideComponentInstance
         Title="TeamsChatEmbedded"
         Location="ClientSideExtension.ApplicationCustomizer"
-<<<<<<< HEAD
-        ComponentId="<Guid for ExtensionID>"
-=======
         ComponentId="c129df59-b7ec-487d-b748-e197e12a16f8"
->>>>>>> upstream/main
         Properties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
     </ClientSideComponentInstance>
 </Elements>

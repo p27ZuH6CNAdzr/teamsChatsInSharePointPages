@@ -39,7 +39,6 @@ export default class TeamsChatEmbeddedApplicationCustomizer
            
       try {
         //Detect if the SharePoint page is running inside Microsoft Teams 
-<<<<<<< HEAD
         //If in Microsoft Teams end the execution
         await app.initialize();
         const context = await app.getContext();
@@ -71,41 +70,9 @@ export default class TeamsChatEmbeddedApplicationCustomizer
         const chatNoPicture = React.createElement(ChatNoPicture, { label: strings.Label });
         ReactDOM.render(chatNoPicture, this._bottomPlaceholder.domElement);  
       }
-=======
-        //If in Microsoft Teams end the excution
-        await app.initialize();
-        const context = await app.getContext();
-        if(context){
-          return;
-        }
-      } catch (exp) {
-
-        this._bottomPlaceholder = this.context.placeholderProvider.tryCreateContent(PlaceholderName.Bottom);
-        let profilePictureUrl:string;
-        //Get User Profile from Microsoft Graph to ensure the most updated profile picture 
-        //If permission is not granted by the administrator fallback to the classic SharePoint profile picture
-        try{
-          const graph = graphfi().using(SPFx(this.context));
-          const photoValue = await graph.me.photo.getBlob();      
-          const url = window.URL || window.webkitURL;
-          profilePictureUrl = url.createObjectURL(photoValue);
-          //Render Chat component with the user profile picture
-          const chat = React.createElement(Chat, { label: strings.Label, userPhoto: profilePictureUrl });
-          ReactDOM.render(chat, this._bottomPlaceholder.domElement);  
-        }catch(exPhoto){   
-          //Render Chat component without the user profile picture
-          const chatNoPicture = React.createElement(ChatNoPicture, { label: strings.Label });
-          ReactDOM.render(chatNoPicture, this._bottomPlaceholder.domElement);  
-        }
-        
-      }   
->>>>>>> upstream/main
 
       return Promise.resolve();
     }
 
 
   }
-
-
-
