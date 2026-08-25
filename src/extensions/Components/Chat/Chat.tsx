@@ -11,6 +11,16 @@ interface ChatProps {
 
 const Chat: React.FC<ChatProps> = ({ label, userPhoto }) => {
 
+<<<<<<< HEAD
+  const [open, setOpen] = useState<boolean>(false);
+
+  useEffect(() => {
+    // Initial state is set in useState
+  }, []);
+
+  function handleClick():void {
+    setOpen(prev => prev === false ? true : false);
+=======
   const [open, setOpen] = useState<boolean>();
 
   useEffect(() => {
@@ -25,6 +35,7 @@ const Chat: React.FC<ChatProps> = ({ label, userPhoto }) => {
 		} else {
 			setOpen(false);
 		}
+>>>>>>> upstream/main
   }
 
   return (

@@ -10,6 +10,16 @@ interface ChatNoPictureProps {
 
 const ChatNoPicture: React.FC<ChatNoPictureProps> = ({ label }) => {
 
+<<<<<<< HEAD
+  const [open, setOpen] = useState<boolean>(false);
+
+  useEffect(() => {
+    // Initial state is set in useState
+  }, []);
+
+  function handleClick():void {
+    setOpen(prev => prev === false ? true : false);
+=======
   const [open, setOpen] = useState<boolean>();
 
   useEffect(() => {
@@ -24,6 +34,7 @@ const ChatNoPicture: React.FC<ChatNoPictureProps> = ({ label }) => {
 		} else {
 			setOpen(false);
 		}
+>>>>>>> upstream/main
   }
 
   return (

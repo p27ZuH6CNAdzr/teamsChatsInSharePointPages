@@ -1,8 +1,3 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-
 # Dependency directories
 node_modules
 
@@ -12,11 +7,16 @@ lib
 release
 solution
 temp
-*.sppkg
 .heft
-
-# Coverage directory used by tools like istanbul
-coverage
+*.sppkg
+*.app
+*.manifest.json
+lib/
+dist/
+lib-commonjs/
+temp/
+solution/
+release/
 
 # OSX
 .DS_Store
@@ -27,8 +27,8 @@ coverage
 bin
 obj
 
-# Resx Generated Code
-*.resx.ts
+# Node.js
+node_modules/
 
-# Styles Generated Code
-*.scss.ts
+# IDE and editor files
+.vscode/

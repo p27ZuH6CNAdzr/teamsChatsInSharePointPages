@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "chat-embedded-client-side-solution",
-    "id": "2a477a84-2b57-44ec-8a69-717403d3af85",
+    "id": "GUID for Solution Id",
     "version": "1.1.0.0",
     "includeClientSideAssets": true,
     "skipFeatureDeployment": true,
@@ -35,7 +35,7 @@
       {
         "title": "Teams Chat for SharePoint",
         "description": "Add Microsoft Teams Chat to SharePoint pages",
-        "id": "d380f2e5-8ff2-4876-bd80-294f6d33dc2f",
+        "id": "GUID for FeatureId",
         "version": "1.1.0.0",
         "assets": {
           "elementManifests": [

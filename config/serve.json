@@ -2,11 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/spfx-serve.schema.json",
   "port": 4321,
   "https": true,
+  "initialPage": "https://{your tenant}.sharepoint.com/_layouts/15/workbench.aspx",
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "pageUrl": "https://{your tenant}.sharepoint.com/sites/{your site}/",
       "customActions": {
-        "c129df59-b7ec-487d-b748-e197e12a16f8": {
+        "<Guid for ExtensionID>": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
             "testMessage": "Test message"
@@ -15,9 +16,9 @@
       }
     },
     "teamsChatEmbedded": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "pageUrl": "https://{your tenant}.sharepoint.com/sites/{your site}/",
       "customActions": {
-        "c129df59-b7ec-487d-b748-e197e12a16f8": {
+        "<Guid for ExtensionID>": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
             "testMessage": "Test message"
